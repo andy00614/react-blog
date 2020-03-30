@@ -1,5 +1,7 @@
 import s from "./index.module.scss";
+import Layout from "../components/Layout";
+
 const HomePage: React.FC<{}> = (props) => {
-  return <div className={s.container}>HomePage</div>;
+  return <Layout>haha</Layout>;
 };
 export default HomePage;
