@@ -1,5 +1,4 @@
-const HomePage: React.FC<{}> = props => {
-  console.log(11);
+const HomePage: React.FC<{}> = (props) => {
   return <div>HomePage</div>;
 };
 export default HomePage;
