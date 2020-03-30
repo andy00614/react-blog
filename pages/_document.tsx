@@ -16,7 +16,7 @@ class MyDocument extends Document {
         <title>Andy Beat</title>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css?family=Shadows Into Light"
+            // href="https://fonts.googleapis.com/css?family=Shadows Into Light"
             rel="stylesheet"
           />
         </Head>

@@ -1,7 +1,7 @@
-import s from "./index.module.scss";
 import Layout from "../components/Layout";
 import List from "../components/List";
 import { NextPage } from "next";
+import s from "./index.module.scss";
 
 export interface List {
   title: string;
@@ -13,9 +13,11 @@ export interface Iprops {
 }
 const HomePage: NextPage<Iprops> = (props) => {
   return (
-    <Layout>
-      <List list={props.list} />
-    </Layout>
+    <div className={s.container}>
+      <Layout>
+        <List list={props.list} />
+      </Layout>
+    </div>
   );
 };
 
