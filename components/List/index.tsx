@@ -3,15 +3,9 @@ import s from "./index.module.scss";
 import dayjs from "dayjs";
 import { useRouter } from "next/router";
 import { NextPage } from "next";
+import { List as ListType } from "../../pages";
 
-interface Iprops {
-  list: Array<{
-    title: string;
-    time: number;
-    articleId: string;
-  }>;
-}
-const List: NextPage<Iprops> = (props) => {
+const List: NextPage<{ list: ListType[] }> = (props) => {
   const router = useRouter();
   const { list } = props;
 
@@ -36,13 +30,4 @@ const List: NextPage<Iprops> = (props) => {
   );
 };
 
-List.getInitialProps = async (ctx) => {
-  const list = [
-    { title: "first", time: 1585563975245, articleId: "1585563975245" },
-    { title: "second", time: 1585564006842, articleId: "1585564006842" },
-  ];
-  return {
-    list,
-  };
-};
 export default List;

@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  .article {
+    display: flex;
+    padding: 5px 0;
+    .time {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .title {
+      color: #777;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
