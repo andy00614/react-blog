@@ -2,6 +2,7 @@ import Layout from "../components/Layout";
 import List from "../components/List";
 import { NextPage } from "next";
 import s from "./index.module.scss";
+import axios from "axios";
 
 export interface List {
   title: string;
@@ -22,10 +23,8 @@ const HomePage: NextPage<Iprops> = (props) => {
 };
 
 HomePage.getInitialProps = async (ctx) => {
-  const list = [
-    { title: "first", time: 1585563975245, articleId: "1585563975245" },
-    { title: "second", time: 1585564006842, articleId: "1585564006842" },
-  ];
+  const data = await axios.get("http://localhost:7012/getList");
+  const list = data.data.data;
   return {
     list,
   };
