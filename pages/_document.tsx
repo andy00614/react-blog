@@ -14,6 +14,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <title>Andy Beat</title>
+        <meta name="referrer" content="no-referrer" />
         <Head>
           <link
             // href="https://fonts.googleapis.com/css?family=Shadows Into Light"

@@ -18,9 +18,11 @@ interface Iprops {
 }
 const Article: NextPage<Iprops> = (props) => {
   return (
-    <Layout>
-      <ReactMarkdown source={props.content.content} escapeHtml={true} />
-    </Layout>
+    <div className={styles.article_wrapper}>
+      <Layout>
+        <ReactMarkdown source={props.content.content} escapeHtml={false} />
+      </Layout>
+    </div>
   );
 };
 
