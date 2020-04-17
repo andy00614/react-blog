@@ -2,6 +2,8 @@ import React from "react";
 import { NextPage } from "next";
 import styles from "./index.module.scss";
 import Axios from "axios";
+import ReactMarkdown from "react-markdown";
+import Layout from "../../components/Layout";
 
 interface AricleType {
   id: number;
@@ -15,7 +17,11 @@ interface Iprops {
   content: AricleType;
 }
 const Article: NextPage<Iprops> = (props) => {
-  return <div className={styles.container}>{props.content.content}</div>;
+  return (
+    <Layout>
+      <ReactMarkdown source={props.content.content} escapeHtml={true} />
+    </Layout>
+  );
 };
 
 Article.getInitialProps = async (ctx) => {
