@@ -48,7 +48,7 @@ export function generateJson(articleDir: string, path: string) {
   const mdFiles = fs.readdirSync(articleDir).filter((f) => f.endsWith(".md"));
   const rst = [];
   if (mdFiles) {
-    // 这块写文件可不可以考虑流的方式
+    // todo:这块写文件可不可以考虑流的方式
     mdFiles.forEach((item) => {
       const addr = articleDir + item;
       rst.push(getFileInfo(addr));
