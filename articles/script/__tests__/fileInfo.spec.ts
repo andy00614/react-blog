@@ -1,4 +1,4 @@
-import { getFileInfo, Trim, generateJson } from "../";
+import { getFileInfo, Trim, generateJson } from "../index";
 import path from "path";
 
 const PATH = (child?: string) =>
@@ -27,5 +27,5 @@ test("trimAll", () => {
 test("generator json file", () => {
   const JsonPath = path.join(__dirname, "../mock.json");
   // generateJson(PATH(),JsonPath)
-  expect(typeof import("../mock.json")).toBeTruthy();
+  expect(typeof import("../../../config/mock.json")).toBeTruthy();
 });

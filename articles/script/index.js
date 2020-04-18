@@ -44,6 +44,7 @@ function isRegularMdFile(content) {
   };
 }
 
+// 读取每个文件 -> 拿到前两行 -> 判断前两行的格式(格式有误要报错) -> 时间信息，内容信息，id信息插入插入数组里
 function generateJson(articleDir, path) {
   const mdFiles = fs.readdirSync(articleDir).filter((f) => f.endsWith(".md"));
   const rst = [];
