@@ -27,5 +27,5 @@ test("trimAll", () => {
 test("generator json file", () => {
   const JsonPath = path.join(__dirname, "../mock.json");
   // generateJson(PATH(),JsonPath)
-  expect(typeof import("../../../config/mock.json")).toBeTruthy();
+  expect(typeof import("../../../__mocks__/article.json")).toBeTruthy();
 });
