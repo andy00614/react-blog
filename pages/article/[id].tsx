@@ -17,6 +17,7 @@ interface AricleType {
 interface Iprops {
   content: AricleType;
 }
+
 const Article: NextPage<Iprops> = (props) => {
   return (
     <div className={styles.article_wrapper}>
