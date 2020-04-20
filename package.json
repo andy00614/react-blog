@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "jest --watch",
+    "test": "jest",
     "generator": "node ./articles/script/script.js"
   },
   "lint-staged": {

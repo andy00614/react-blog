@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  info:
+  blog:
     container_name: my-blog
     image: andy00614/my-blog
     ports:
