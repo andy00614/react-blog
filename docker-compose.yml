@@ -1,4 +1,4 @@
-version: "1.0.0"
+version: "3.7"
 services:
   info:
     container_name: my-blog
