@@ -24,8 +24,6 @@ const HomePage: NextPage<Iprops> = (props) => {
 };
 
 HomePage.getInitialProps = async (ctx) => {
-  const data = await axios.get("http://localhost:7012/getList");
-  // const list = data.data.data;
   const list = getHomeList();
   return {
     list,
