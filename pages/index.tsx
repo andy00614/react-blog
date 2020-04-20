@@ -2,7 +2,6 @@ import Layout from "../components/Layout";
 import List from "../components/List";
 import { NextPage } from "next";
 import s from "./index.module.scss";
-import axios from "axios";
 import { getHomeList } from "../utils/blog";
 
 export interface List {
