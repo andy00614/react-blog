@@ -16,6 +16,9 @@ const HomePage: NextPage<Iprops> = (props) => {
   return (
     <div className={s.container}>
       <Layout>
+        <section>
+          Everybody wants to be a hero, but nobody wants to start from zero...
+        </section>
         <List list={props.list} />
       </Layout>
     </div>
