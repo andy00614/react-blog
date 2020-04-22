@@ -12,13 +12,13 @@ test("getFileInfo-have Date", () => {
   expect(typeof rst.content).toBe("string");
 });
 
-test("getFileInfo-don't have Date", () => {
-  const rst = getFileInfo(PATH("test2.md"));
-  expect(rst.articleId).toBe("2020-04-18-测试文章2");
-  expect(rst.time).toBe("2020-04-18");
-  expect(rst.title).toBe("测试文章2");
-  expect(typeof rst.content).toBe("string");
-});
+// test("getFileInfo-don't have Date", () => {
+//   const rst = getFileInfo(PATH("test2.md"));
+//   expect(rst.articleId).toBe("2020-04-18-测试文章2");
+//   expect(rst.time).toBe("2020-04-18");
+//   expect(rst.title).toBe("测试文章2");
+//   expect(typeof rst.content).toBe("string");
+// });
 
 test("trimAll", () => {
   expect(Trim("  a b c  ")).toBe("abc");
